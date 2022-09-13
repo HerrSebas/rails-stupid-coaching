@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+#card_margin {
+  margin: 6px;
+  border-left-width: 4px;
+  border-left-color: RGB(221, 221, 221);
+}
+
+#card_coach {
+  background-color: RGB(254, 255, 224);
+  margin: 6px;
+  border-left-width: 4px;
+  border-left-color: RGB(221, 221, 221);
+}

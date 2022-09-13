@@ -1,16 +1,19 @@
-<h1>Stupid Coaching</h1>
-<div class="card w-75">
-  <div class="card-body">
-    <h5 class="card-title"><%= params[:question] %></h5>
-    <p class="card-text">-You</p>
+<div class = "container" style = "margin 3px">
+  <div class= "col-12">
+    <h1>Stupid Coaching</h1>
+    <div class="card w-75" id= "card_margin" >
+      <div class="card-body">
+        <h5 class="card-title"><%= params[:question] %></h5>
+        <p class="card-text">-You</p>
+      </div>
+    </div>
+
+    <div class="card w-75" id= "card_coach">
+      <div class="card-body">
+        <h5 class="card-title"><%= @answer %></h5>
+        <p class="card-text">-Your coach</p>
+      </div>
+    </div>
+    <%= link_to "Ask a new question", "/ask"%>
   </div>
 </div>
-
-<div class="card w-75">
-  <div class="card-body">
-    <h5 class="card-title"><%= @answer %></h5>
-    <p class="card-text">-Your coach</p>
-  </div>
-</div>
-
-  <%= link_to "Ask a new question", "/ask"%>
